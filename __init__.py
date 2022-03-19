@@ -12,7 +12,7 @@ class FcDeKampioenen(MycroftSkill):
         self.playlist = []
         for roots, dirs, files in os.walk(path):
             for file in files:
-                self.playlist.append(os.join(path,file))
+                self.playlist.append(join(path,file))
 
     def initialize(self):
         self.audioservice = AudioService(self.bus)
